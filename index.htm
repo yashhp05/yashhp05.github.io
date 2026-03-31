@@ -1,64 +1,27 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yashhp05 | Welcome</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
-            color: white;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            padding: 40px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            max-width: 500px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #00d2ff;
-        }
-        p {
-            font-size: 1.1rem;
-            color: #ccc;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: #00d2ff;
-            color: #1e1e2f;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-            background: #3a7bd5;
-            color: white;
-        }
-    </style>
+    <title>Yashhp05 | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Welcome to Yashhp05</h1>
-        <p>Namaste! Yeh meri official GitHub website hai. Yahan aap mere projects aur coding journey dekh sakte hain.</p>
-        <a href="https://github.com/Yashhp05" class="btn">Explore My GitHub</a>
+        <h1 id="main-title">Welcome to Yashhp05</h1>
+        <p class="subtitle">Software Enthusiast & Developer</p>
+        
+        <div class="card">
+            <p>Explore my projects and coding journey on GitHub.</p>
+            <button id="colorBtn" class="btn">Change Theme</button>
+        </div>
+
+        <div class="footer">
+            <a href="https://github.com/Yashhp05" target="_blank" class="link-btn">Visit GitHub Profile</a>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
