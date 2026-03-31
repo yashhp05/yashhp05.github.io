@@ -1,17 +1,14 @@
-function addTodo() {
-  let input = document.getElementById("todoInput");
-  let task = input.value;
+const btn = document.getElementById('colorBtn');
+const body = document.body;
 
-  if (task === "") {
-    alert("Please enter a task");
-    return;
-  }
+// Array of nice dark-themed colors
+const themes = ['#0f172a', '#1e1b4b', '#111827', '#020617', '#171717'];
+let currentTheme = 0;
 
-  let li = document.createElement("li");
-  li.textContent = task;
-
-  let list = document.getElementById("todoList");
-  list.appendChild(li);
-
-  input.value = "";
-}
+btn.addEventListener('click', () => {
+    currentTheme = (currentTheme + 1) % themes.length;
+    body.style.backgroundColor = themes[currentTheme];
+    
+    // Add a little feedback in console
+    console.log("Theme switched to: " + themes[currentTheme]);
+});
